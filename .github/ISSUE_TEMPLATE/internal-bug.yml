@@ -1,0 +1,168 @@
+name: Internal
+description: Internal engineering task
+title: "[Enter Title]"
+labels: ["Eng-InternalMaintenance"]
+body:
+  - type: markdown
+    attributes:
+      value: "# Issue Details"
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product
+      description: What product is this issue related to?
+      multiple: false
+      options:
+        - A&I
+        - Accuris
+        - Acorn
+        - AdvocateHub
+        - AdvocateHub - Android
+        - AdvocateHub - Discourse
+        - AdvocateHub - Elevate
+        - AdvocateHub - iOS
+        - AES - CIS
+        - AES - EDI
+        - AI Advisor
+        - AIS - DCM
+        - ALP
+        - Alpha
+        - ALSS
+        - AMS - Alertfind
+        - AMS - EMS
+        - AnswerHub
+        - Applied AI - Agents
+        - Applied AI - ESB
+        - Applied AI - Max
+        - Aurea ACRM
+        - Aurea Messenger
+        - Aurea Monitor
+        - Aurea Process
+        - Aurea Product(Platform)
+        - CallStream/CityNumbers
+        - CDP
+        - Central Finance
+        - Central SaaS Compute
+        - Central SaaS DB
+        - Central SaaS Monitoring
+        - Central SaaS Security and Compliance
+        - Central support
+        - Communicate XI
+        - Cloud Charging and Billing
+        - Cloud Charging and Billing - CO
+        - Cloud Charging and Billing - UI
+        - CloudCRM
+        - CloudFix
+        - CloudSense
+        - CNU
+        - Coaching
+        - Computron
+        - Config Product
+        - Contently
+        - Cost Reduction
+        - Crossover
+        - Crossover Internal
+        - Crossover Platform Investments
+        - Dash
+        - DevFlows
+        - DevSpaces
+        - Discover XI
+        - DNN
+        - Education
+        - Engine Yard
+        - Everest
+        - Exinda Network Orchestrator
+        - FogBugz
+        - Future of Work
+        - Gensym
+        - GFI Archiver
+        - GFI AppManager
+        - GFI MailEssentials
+        - GFI FaxMaker
+        - GoMembers Enterprise
+        - Gomembers Product
+        - Google Workspace
+        - Import CopperTree-Skyvera
+        - JigsawMe
+        - Jive Cloud
+        - Jive Copilot
+        - Jive HOP
+        - Kandy CPaaS
+        - Kandy MFA
+        - Kandy UCaaS
+        - Kayako
+        - Kayako Classic
+        - Kerio Connect
+        - Kerio Control
+        - LanGuard
+        - Learning
+        - Messageone Product
+        - Mobilogy
+        - NewNet
+        - NorthPlains - Telescope
+        - NorthPlains - Unify/OnBrand
+        - NorthPlains - Xinet
+        - NorthPlains Product
+        - NuView
+        - ObjectStore
+        - Olive Software
+        - OnDemand
+        - OneSCM
+        - OneSpot
+        - Onyx
+        - PeerApp
+        - Pivotal
+        - Playbooks
+        - PostBeyond
+        - PostBeyond - Android
+        - PostBeyond - iOS
+        - ResponseTek Telco
+        - SaaS Central
+        - SaaS Product
+        - SaaS Security
+        - ScaleArc
+        - Sensage AP
+        - SLI Systems
+        - STL Product
+        - Stratifyd
+        - StreetSmart/FFM
+        - SupportSoft
+        - Synoptos
+        - Tempo
+        - Tempo Assembly Lines
+        - TPM - Tempo Dashboards
+        - TPM Engineering
+        - Tracking
+        - TradeBeam
+        - Vision
+        - VoltDelta
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of Work & Desired Outcome
+      description: Provide a detailed description of the work and what the desired outcome is.
+      placeholder: Detailed description of work and desired outcome
+    validations:
+      required: true
+  - type: textarea
+    id: stepsToReproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Enter the steps to reproduce the issue
+      placeholder: ...
+    validations:
+      required: false
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority (Business)
+      description: What is the business priority of this issue?
+      multiple: false
+      options:
+        - High
+        - Normal
+        - Low
+    validations:
+      required: true
